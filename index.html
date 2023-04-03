@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- Site Title -->
+	<title>Portfolio</title>
+	<!-- Favicon-->
+	<!-- <link rel="shortcut icon" type="image/png" href="./img/favicon.png" /> -->
+
+	<!-- Meta Character & Device Dimension -->
+	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <title>Document</title>
+
+	<!-- Meta Author, Description, Keywords -->
+	<!-- <meta name="author" content="Niladri Mondal" />
+	<meta name="description" content="My Projects" />
+	<meta name="keywords" content="Projects, Apps, Web, Front End, ReactApps" /> -->
+
+	<!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/index.css">
+
+	<!-- JS -->
+    <script src="./js/index.js"></script>
+
 </head>
 <body>
-    
+    <header class="header active">
+        <h1 class="logo">My <span>Portfolio</span></h1>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a class="navbar-link" href="#">HOME</a></li>
+                <li><a class="navbar-link" href="#">ABOUT</a></li>
+                <li><a class="navbar-link" href="#">SERVICES</a></li>
+                <li><a class="navbar-link" href="#">SKILLS</a></li>
+                <li><a class="navbar-link" href="#">BIODATA</a></li>
+                <li><a class="navbar-link" href="#">PROJECTS</a></li>
+                <li><a class="navbar-link" href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-nav-btn">
+            <i class="fa fa-bars mobile-nav-icon" id="nav-icon" style="font-size:36px; color: white;"></i>
+            <i class="fa fa-remove mobile-nav-icon" id="nav-icon-close" style="font-size:36px; color: white"></i>
+        </div>
+    </header>
 </body>
 </html>
