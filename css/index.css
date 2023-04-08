@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Mukta:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Mukta:wght@500&display=swap'); */
 
 *{
     padding: 0;
@@ -25,21 +25,27 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 999;
 }
 
 .header .logo{
     color: white;
-    font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 1.8rem;
+    /* font-family: 'Montserrat Subrayada', sans-serif; */
+    /* font-family: Tahoma, sans-serif; */
+    font-family: 'Brush Script MT', cursive;
+    /* text-transform: uppercase; */
+    font-size: 2.5rem;
+    text-shadow: yellow 1px 0.5px;
+    letter-spacing: 2px;
 }
 
 .header .logo span{
-    color: #9dffde;
+    color: #419e5d;
 }
 
 .navbar-list{
     display: flex;
-    gap: 3rem;
+    gap: 1.6rem;
     list-style: none;
 }
 
@@ -49,12 +55,21 @@ body{
     text-decoration: none;
     font-size: 1.2rem;
     color: white;
-    font-family: 'Mukta', sans-serif;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    /* font-family: 'Mukta', sans-serif; */
+    /* font-family: 'Courier New', monospace; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.navbar-link:hover,
-.navbar-link:active{
-    color: #9dffde;
+.navbar-link:hover{
+    /* color: #9dffde; */
+    background-color: #419e5d;
+}
+
+.navbar-link:visited{
+    text-decoration: underline;
 }
 
 .mobile-nav-btn{
@@ -66,6 +81,55 @@ body{
     display: none;
 }
 
+
+/* icon styling */
+.navbar{
+    overflow: hidden;
+}
+.navbar li{
+    cursor: pointer;
+}
+.navbar li a>span:nth-child(1){
+    /* background: linear-gradient(to bottom, yellow 0%, #419e5d 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
+    /* color: yellow; */
+    background-color: rgb(255,255,255,0.07);
+    border-radius:5px ;
+    /* font-size: 64px; */
+}
+.navbar li a>span:nth-child(2){
+    background-color: #419e5d;
+    color: white;
+    border-radius: 5px;
+    font-size: 24px;
+}
+.navbar a{
+    text-decoration: none;
+}
+.navbar .nav-icon-text{
+    color: yellow;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    font-weight:500;
+}
+.navbar .navbar-icon{
+    text-decoration: none;
+    color: white;
+}
+.navbar li:hover span{
+    transform: translateY(-100%);
+}
+.navbar li a>span{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
 
 /* navbar responsive */
 @media(max-width:980px){
@@ -102,6 +166,12 @@ body{
     .navbar-list{
         flex-direction: column;
         align-items: center;
+    }
+
+    .navbar li a>span:nth-child(2){
+        visibility: hidden;
+        height: 0;
+        padding: 5px 10px;
     }
 
     .active .navbar{
@@ -168,7 +238,7 @@ body {
 .intro section{
     font-family: Tahoma, sans-serif;
     font-size: 2.2rem;
-    padding: 0 0 0 1.2rem;
+    padding: 0 0 0 0.2rem;
 }
 .hero-text h2{
     font-family: 'Courier New', monospace;
@@ -270,7 +340,7 @@ body {
 }
 .container2 .desc p {
     margin: 2rem 0;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 .container2 .desc .horizontal_line {
     height: 3px;
@@ -280,9 +350,7 @@ body {
     margin-top: 0;
 }
 .container2 .figure {
-    /* padding-left: 0rem; */
-    /* display: flex; */
-    /* justify-content: center; */
+    position: relative;
 }
 .container2 .figure img{
     width:100%;
@@ -291,7 +359,26 @@ body {
     box-shadow: yellow -10px -10px,
                 #419e5d -27px 10px,
                 #419e5d 6px 0px;
+    display: block;
 }
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .figure:hover .overlay {
+    opacity: 1;
+  }
+
 .container2 .desc ul{
     margin: 2rem 0;
     padding: 1.5rem 0;
@@ -316,7 +403,6 @@ body {
 }
 .container2 .desc .btn:hover{
     background-color: #303030;
-    /* margin-bottom: 2rem; */
 }
 .container2 .desc .btn a{
     font-family: Tahoma, sans-serif;
@@ -344,7 +430,7 @@ body {
     width:max-content;
     margin: 1rem 1.5rem 1rem 0;
     border-radius: 0.5rem;
-    box-shadow: 2px 2px 10px rgb(214, 214, 214);
+    box-shadow: 0px 2px 5px rgb(182, 180, 180);
     transition: background-color, transform 0.3s linear;
 }
 .container2 .desc .get-me .links .bttn a{
@@ -370,111 +456,6 @@ body {
 }
 
 /* about css end */
-
-
-/* services css start */
-.service-heading{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.service-heading h1{
-    font-family: Tahoma, sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 3rem;
-    letter-spacing: 3px;
-    margin: 0;
-    padding-top: 2rem;
-}
-.service-heading h3{
-    font-family: 'Courier New', monospace;
-    color: #419e5d;
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 4rem;
-    /* margin: 0; */
-}
-.service-heading p{
-    font-family: Tahoma, sans-serif;
-    color: #ffffff;
-    text-align: center;
-    font-size: 1.4rem;
-    padding-top: 1.5rem;
-}
-.service-heading p a{
-    color: yellow;
-    text-decoration: none;
-}
-.service-heading .hr1{
-    height: 4px;
-    width: 400px;
-    border: 0;
-    background-image: linear-gradient(to right, transparent, #419e5d, transparent);
-    margin-top: 0;
-    align-self: center;
-    /* color: linear-gradient(90deg, #9dffde 20%, transparent 100%); */
-}
-.service-cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: 30px 50px 40px;
-}
-.s-card{
-    width: 16rem;
-    height: 12rem;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 6px;
-    border: transparent solid 2px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 0 6px rgba(0, 0, 0, 0.4);
-    display: flex;
-    flex-direction: column;
-    transition: border,transform 0.2s linear;
-    /* justify-content:center; */
-    /* align-items: center; */
-}
-
-/* .s-card .card-heading{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-} */
-
-.s-card i{
-    align-self: center;
-}
-
-.s-card h2{
-    color: yellow;
-    font-family: Tahoma, sans-serif;
-    font-size: 1.4rem;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    align-self: center;
-}
-
-.s-card p{
-    font-family: 'Courier New', monospace;
-    color: white;
-    font-size: 1.1rem;
-    align-self: center;
-}
-
-.s-card:hover{
-    transform: scale(1.03);
-    /* background-color: rgba(255, 255, 255, 0.1); */
-    border: #fdffdc solid 2px;
-}
-
-.service-icons{
-    color: yellow;
-}
-/* services css end */
 
 
 /* biodata style start */
@@ -546,6 +527,15 @@ position: relative;
 max-width: 1200px;
 margin: 0 auto;
 z-index: -1;
+}
+.timeline h2{
+    font-size: 1.3rem;
+}
+.timeline ul {
+    padding: 0.5rem;
+}
+.timeline ul li{
+    font-size: 1.1rem;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -740,4 +730,84 @@ border-radius: 6px;
 }
 
 
+
+
+/* footer styling start */
+footer{
+    position: relative;
+    margin: 4rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+footer .divider{
+    margin: 1rem auto;
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer .divider span:nth-child(odd) {
+    width: 30%;
+    background: #419e5d;
+}
+footer .divider span:nth-child(even) {
+    width: 100%;
+    background: white;
+}
+
+footer .divider span {
+    position: relative;
+    margin: 0 2rem;
+    height: 0.4rem;
+    border-radius: 4px;
+}
+footer .footer-body {
+    margin: 2rem auto 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-body i{
+    color: white;
+    font-size: 4rem;
+}
+.footer-body h3{
+    color: #419e5d;
+    font-size: 1.5rem;
+    font-family: 'Courier New', monospace;
+    margin-top: 2rem;
+}
+.footer-body h3 span{
+    color: yellow;
+}
+.footer-body h3 a{
+    text-decoration: none;
+}
+.footer-body .links{
+    display: flex;
+    flex-direction: row;
+}
+.footer-body .bttn i{
+    font-size: 1.5rem;
+    margin: 1.5rem 0.5rem;
+    color: #419e5d;
+    transition: 0.3s linear;
+}
+.footer-body .bttn i:hover{
+    color: white;
+    margin-top: 1rem;
+}
+@media (max-width: 768px){
+    footer .divider {
+        width: 100%;
+    }
+    footer .divider span {
+        margin: 0 1rem;
+    }
+}
 

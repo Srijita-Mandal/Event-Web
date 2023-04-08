@@ -1,26 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Site Title -->
 	<title>Portfolio</title>
-	<!-- Favicon-->
-	<!-- <link rel="shortcut icon" type="image/png" href="./img/favicon.png" /> -->
-
-	<!-- Meta Character & Device Dimension -->
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Meta Author, Description, Keywords -->
-	<!-- <meta name="author" content="Niladri Mondal" />
-	<meta name="description" content="My Projects" />
-	<meta name="keywords" content="Projects, Apps, Web, Front End, ReactApps" /> -->
-
 	<!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css%22%3E">
 	<!-- CSS -->
 	<link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/projects.css">
 
 	<!-- JS -->
     <script src="./js/index.js"></script>
@@ -32,13 +23,69 @@
         <h1 class="logo">My <span>Portfolio</span></h1>
         <nav class="navbar">
             <ul class="navbar-list">
-                <li><a class="navbar-link" href="#container1">HOME</a></li>
+                <!-- <li><a class="navbar-link" href="#container1">HOME</a></li>
                 <li><a class="navbar-link" href="#about_me">ABOUT</a></li>
                 <li><a class="navbar-link" href="#services">SERVICES</a></li>
                 <li><a class="navbar-link" href="#skills">SKILLS</a></li>
                 <li><a class="navbar-link" href="#biodata">BIODATA</a></li>
                 <li><a class="navbar-link" href="#projects">PROJECTS</a></li>
-                <li><a class="navbar-link" href="#">CONTACT</a></li>
+                <li><a class="navbar-link" href="#">CONTACT</a></li> -->
+                <li>
+                    <a href="#container1">
+                        <span class="nav-icon-text">HOME</span>
+                        <span class="navbar-icon">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about_me">
+                        <span class="nav-icon-text">ABOUT</span>
+                        <span class="navbar-icon">
+                            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#services">
+                        <span class="nav-icon-text">SERVICES</span>
+                        <span class="navbar-icon">
+                            <i class="fa fa-desktop" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills">
+                        <span class="nav-icon-text">SKILLS</span>
+                        <span class="navbar-icon">
+                            <i class="fa fa-bookmark" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#biodata">
+                        <span class="nav-icon-text">BIODATA</span>
+                        <span class="navbar-icon">
+                            <i class="fa fa-address-card" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects">
+                        <span class="nav-icon-text">PROJECTS</span>
+                        <span class="navbar-icon">
+                            <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <span class="nav-icon-text">CONTACT</span>
+                        <span class="navbar-icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </li>
             </ul>
         </nav>
         <div class="mobile-nav-btn">
@@ -55,14 +102,14 @@
 					<p id="vertial-text">Hi</p>
 					<section class="myname">
 						<h1>I'm</h1>
-						<h1>Srijita Mandal</h1>
+						<h1>Monica Geller</h1>
 					</section>
 				</div>
                 
 			</div>
             
 			<div>
-                <h2>I'm a <a href="" class="typewrite" data-period="2000" data-type='[ "Front-end Developer", "Back-end Developer", "UI/UX Designer", "Web Designer", "Data Analyst"]'>
+                <h2>I'm a <a href="" class="typewrite" data-period="2000" data-type='[ "Front-end Developer", "Back-end Developer", "UI/UX Designer", "Web Designer", "Data Analyst", "App Developer"]'>
                     <span class="wrap"></span></a></h2>
             </div>
 			
@@ -81,19 +128,23 @@
     <div class="container2">
 		<div class="figure">
 			<img src="/images/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg" alt="Laptop Img">
+            <div class="overlay">
+                <h3>Monica Geller</h3>
+                <p>Full Stack Developer</p>
+            </div>
 		</div>
         <div class="desc">
             <h1>Know Me More</h1>
             <div class="horizontal_line"></div>
             <p>
-                I love to create awesome creative &amp; user-friendly front-end projects
-                solving real-time issues with a creative keen eye for work.
+                I love to create beautiful front-end designs for websites and applications.
+                I am a problem solver at heart, 
+                and like to contribute in the fields, where I can use my skills to develop innovative and efficient solutions.
             </p>
             <div id="readText">
                 <p>
-                    Also enjoy developing simple, clean, attractive and slick websites &amp;
-                    application interfaces with modernistic looks that provide
-                    real value &amp; interest to the end-user.
+                    Besides this, I enjoy singing, doodling and gardening. 
+                    I am a active learner and always looking for new challenges & opportunities where I can add value and love.
                 </p>
             </div>
             
@@ -123,33 +174,42 @@
         <div class="service-heading">
             <h1>Services</h1>
             <hr class="hr1"/>
-            <p>Looking for an intern or paid services? <a href="#">Contact me</a></p>
+            <p>Looking for an intern or paid services? <a href="contact.html">Contact me</a></p>
             <h3>---- What I do ----</h3>
         </div>
-        
+                    
         <div class="service-cards">
-            <div class="s-card">
+            <div class="card1">
+                <i class="fa fa-dribbble service-icons" style="font-size:36px"></i>
+                <h3>UI/UX Designer</h3>
+                <p class="small">You can hire me as an UI/UX designer. I have 5 years experience in field.</p>
+                
+            </div>
+            <div class="card1">
+                <i class="fa fa-desktop service-icons" style="font-size:36px"></i>
+                <h3>Web Designer</h3>
+                <p class="small">You can hire me as a web designer. I have 5 years experience in field.</p>
+                
+            </div>
+            <div class="card1">
+                <i class="fa fa-mobile service-icons" style="font-size:36px"></i>
+                <h3>App Developer</h3>
+                <p class="small">You can hire me as an app developer. I have 2 years experience in field.</p>
+                
+            </div>
+            <div class="card1">
+                <i class="fa fa-database service-icons" style="font-size:36px"></i>
+                <h3>Data Analyst</h3>
+                <p class="small">You can hire me as an data analyst. I have 1 years experience in field..</p>
+                
+            </div>
+            <!-- <div class="s-card">
                 <i class="fa fa-laptop service-icons" style="font-size:36px"></i>
                 <h2>Website Design</h2>
                 <p>I can do web design. I love web design.</p>
-            </div>
-            <div class="s-card">
-                <i class="fa fa-laptop service-icons" style="font-size:36px"></i>
-                <h2>Website Design</h2>
-                <p>I can do web design. I love web design.</p>
-            </div>
-            <div class="s-card">
-                <i class="fa fa-laptop service-icons" style="font-size:36px"></i>
-                <h2>Website Design</h2>
-                <p>I can do web design. I love web design.</p>
-            </div>
-            <div class="s-card">
-                <i class="fa fa-laptop service-icons" style="font-size:36px"></i>
-                <h2>Website Design</h2>
-                <p>I can do web design. I love web design.</p>
-            </div>
-        </div>
-    </section>
+            </div> -->
+    </div>
+                </section>
     <!-- services section end -->
 
 
@@ -165,53 +225,53 @@
             <div class="skill-part-1">
                 <h3>Languages</h3>
                 <hr class="hr2"/>
-                <img class="skill-img" src="images/Python-logo-notext.svg (1).png">
-                <img class="skill-img" src="images/java2.png">
-                <img class="skill-img" src="images/c.png">
-                <img class="skill-img" src="images/c-.png">
-                <img class="skill-img" src="images/js.png">
-                <img class="skill-img" src="images/php.png">
-                <img class="skill-img" src="images/c-sharp.png">
-                <img class="skill-img" src="images/html-5.png">
-                <img class="skill-img" src="images/css-3.png">
-                <img class="skill-img" src="images/Go-Logo_Blue.png">
+                <img class="skill-img" src="images/Python-logo-notext.svg (1).png" title="python">
+                <img class="skill-img" src="images/java2.png" title="java">
+                <img class="skill-img" src="images/c.png" title="C">
+                <img class="skill-img" src="images/c-.png" title="C++">
+                <img class="skill-img" src="images/js.png" title="Javascript">
+                <img class="skill-img" src="images/php.png" title="php">
+                <img class="skill-img" src="images/c-sharp.png" title="C#">
+                <img class="skill-img" src="images/html-5.png" title="HTML5">
+                <img class="skill-img" src="images/css-3.png" title="CSS3">
+                <img class="skill-img" src="images/Go-Logo_Blue.png" title="go-lang">
             </div>
         </div>
         <div class="skill-body">
             <div class="skill-part">
                 <h3>Libraries & Frameworks</h3>
                 <hr class="hr2"/>
-                <img class="skill-img" src="images/bootstrap.png">
-                <img class="skill-img" src="images/science.png">
-                <img class="skill-img" src="images/nodejs2.svg">
-                <img class="skill-img" src="images/mongodb.svg">
-                <img class="skill-img" src="images/angular.png">
-                <img class="skill-img" src="images/nextjs.svg">
-                <img class="skill-img" src="images/Vue.js_Logo.png">
-                <img class="skill-img" src="images/flutter.svg">
-                <img class="skill-img" src="images/typescript.png">
-                <img class="skill-img" src="images/Tailwind.png">
-                <img class="skill-img" src="images/mui.png">
-                <img class="skill-img" src="images/1280px-Firebase_Logo.svg.png">
-                <img class="skill-img" src="images/pytorch.png">
-                <img class="skill-img" src="images/tensorflow.png">
+                <img class="skill-img" src="images/bootstrap.png" title="bootstrap">
+                <img class="skill-img" src="images/science.png" title="reactJs">
+                <img class="skill-img" src="images/nodejs2.svg" title="NodeJs">
+                <img class="skill-img" src="images/mongodb.svg" title="mongodb">
+                <img class="skill-img" src="images/angular.png" title="angular">
+                <img class="skill-img" src="images/nextjs.svg" title="nextJs">
+                <img class="skill-img" src="images/Vue.js_Logo.png"  title="vue.js">
+                <img class="skill-img" src="images/flutter.svg"  title="flutter">
+                <img class="skill-img" src="images/typescript.png" title="typescript">
+                <img class="skill-img" src="images/Tailwind.png" title="tailwind-css">
+                <img class="skill-img" src="images/mui.png" title="mui">
+                <img class="skill-img" src="images/1280px-Firebase_Logo.svg.png" title="firebase">
+                <img class="skill-img" src="images/pytorch.png" title="pytorch">
+                <img class="skill-img" src="images/tensorflow.png" title="tensorflow">
             </div>
             <div class="skill-part">
                 <h3>Tools</h3>
                 <hr class="hr2"/>
                 
-                <img class="skill-img" src="images/postman.png">
-                <img class="skill-img" src="images/git.svg">
-                <img class="skill-img" src="images/github.png">
-                <img class="skill-img" src="images/bitbucket.png">
-                <img class="skill-img" src="images/vscode.svg">
-                <img class="skill-img" src="images/figma.svg">
-                <img class="skill-img" src="images/ai.svg">
-                <img class="skill-img" src="images/xd.svg">
-                <img class="skill-img" src="images/windows.png">
-                <img class="skill-img" src="images/linux.png">
-                <img class="skill-img" src="images/google-cloud-logo.png">
-                <img class="skill-img" src="images/msoffice.svg">
+                <img class="skill-img" src="images/postman.png" title="postman">
+                <img class="skill-img" src="images/git.svg" title="git">
+                <img class="skill-img" src="images/github.png" title="github">
+                <img class="skill-img" src="images/bitbucket.png"  title="bitbucket>
+                <img class="skill-img" src="images/vscode.svg" title="vscode">
+                <img class="skill-img" src="images/figma.svg" title="figma">
+                <img class="skill-img" src="images/ai.svg"  title="Adobe Illustrator">
+                <img class="skill-img" src="images/xd.svg" title="Adobe Xd">
+                <img class="skill-img" src="images/windows.png" title="windows">
+                <img class="skill-img" src="images/linux.png" title="linux">
+                <img class="skill-img" src="images/google-cloud-logo.png" title="Google cloud">
+                <img class="skill-img" src="images/msoffice.svg" title="MS Office">
               </div>
         </div>
     </section>
@@ -234,20 +294,29 @@
                 <div class="timeline">
                     <div class="container right">
                       <div class="content">
-                        <h2>2017</h2>
-                        <p>Lorem ipsum..</p>
-                      </div>
-                    </div>
-                    <div class="container right">
-                      <div class="content">
-                        <h2>2016</h2>
-                        <p>Lorem ipsum..</p>
+                        <h2>XYZ college</h2>
+                        <ul>
+                            <li>Graduation</li>
+                            <li>2017-2021</li>
+                        </ul>
                       </div>
                     </div>
                     <div class="container right">
                         <div class="content">
-                          <h2>2016</h2>
-                          <p>Lorem ipsum..</p>
+                          <h2>XYZ School</h2>
+                          <ul>
+                              <li>Higher Secondary(10+2)</li>
+                              <li>2015-2017</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="container right">
+                        <div class="content">
+                          <h2>ABC School</h2>
+                          <ul>
+                            <li>Secondary(10th)</li>
+                            <li>2009-2015</li>
+                          </ul>
                         </div>
                       </div>
                   </div>
@@ -257,27 +326,39 @@
                 <hr class="hr2"/>
                 <div class="timeline">
                     <div class="container right">
-                      <div class="content">
-                        <h2>2017</h2>
-                        <p>Lorem ipsum..</p>
-                      </div>
-                    </div>
-                    <div class="container right">
-                      <div class="content">
-                        <h2>2016</h2>
-                        <p>Lorem ipsum..</p>
-                      </div>
-                    </div>
-                    <div class="container right">
                         <div class="content">
-                          <h2>2016</h2>
-                          <p>Lorem ipsum..</p>
+                          <h2>ABC Organization</h2>
+                          <ul>
+                            <li>Flutter developer</li>
+                            <li>March 2020 - Aug 2020</li>
+                          </ul>
                         </div>
                       </div>
                       <div class="container right">
                         <div class="content">
-                          <h2>2016</h2>
-                          <p>Lorem ipsum..</p>
+                          <h2>XYZ Organization</h2>
+                          <ul>
+                            <li>SDE</li>
+                            <li>June 2019 - Dec 2019</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="container right">
+                        <div class="content">
+                          <h2>ABC Organization</h2>
+                          <ul>
+                            <li>Front-end developer</li>
+                            <li>Dec 2018 - May 2019</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>CED Organization</h2>
+                        <ul>
+                            <li>Front-end Developer</li>
+                            <li>May 2018 - Aug 2018</li>
+                          </ul>
                         </div>
                       </div>
                   </div>
@@ -285,8 +366,7 @@
             </div>
         </div>
     </section>
-
-
+     
     <!-- projects section start -->
     <section id="projects">
         <div class="projects-heading">
@@ -295,5 +375,197 @@
             <h3>---- Different projects that I have made ----</h3>
         </div>
     </section>
+    <section class="project"> 
+        <div class="pre-btn"><div class="btn"><i class="fa-solid fa-caret-down fa-rotate-90"></i></div></div>
+        <div class="nxt-btn"><div class="btn"><i class="fa-solid fa-caret-up fa-rotate-90"></i></div></div>
+        <div class="project-container">
+          <div class="project-card">
+              <div class="project-image">
+                  <img src="images/projects/huddle.jpg" class="project-thumb" alt="">
+                  <button class="card-btn">
+                    <p class="project-short-description">Huddle landing page is a front-end web design project to view the optimal layout of the components for depending on the device's screen size. Also see the hover effects for all interactive elements.                 
+                  </p>
+                  <br><a href=""#>View more</a></button>
+              </div>
+              <div class="project-info">
+                  <h2 class="project-name">Huddle landing website</h2>
+              </div>
+          </div>
+          <div class="project-card">
+              <div class="project-image">
+                  <img src="images/projects/search_engine_result_page.jpg" class="project-thumb" alt="">
+                  <button class="card-btn"><p class="project-short-description">
+                    Front-end project with mostly use of JavaScript. A web page where user can search from a list or from a page. It will filter the items which match or almost match with the searched item.
+                  </p>
+                  <br><a href=""#>View more</a></button>
+              </div>
+              <div class="project-info">
+                  <h2 class="project-name">Search engine website</h2>
+              </div>
+          </div>
+          <div class="project-card">
+              <div class="project-image">
+                  <img src="images/projects/pricing.jpg" class="project-thumb" alt="">
+                  <button class="card-btn"><p class="project-short-description">
+                    Pricing page is a front-end web page where I learn about cards and featuring a custom header and footer. It mainly deals with layout display of components and Responsineness of the page.
+                  </p>
+                  <br><a href=""#>View more</a></button>
+              </div>
+              <div class="project-info">
+                  <h2 class="project-name">Pricing</h2>
+              </div>
+          </div>
+          <div class="project-card">
+              <div class="project-image">
+                  <img src="images/projects/product.jpg" class="project-thumb" alt="">
+                  <button class="card-btn"><p class="project-short-description">
+                    Lean product-focused marketing page with extensive grid and image work. Again a front-end web page. Learn about css grid, how to create the whole layout with grid properties. Learn about row, columns.
+                    
+                    </p>
+                  <br><a href=""#>View more</a></button>
+              </div>
+              <div class="project-info">
+                  <h2 class="project-name">Product website</h2>
+              </div>
+          </div>
+          <div class="project-card">
+              <div class="project-image">
+                  <img src="images/projects/weather.jpg" class="project-thumb" alt="">
+                  <button class="card-btn"><p class="project-short-description">Weather app is a mobile application with beautiful design which show the weather forecast depending on the locations user provide. It's a dynamic app deals with real-time API's.</p>
+                  <br><a href=""#>View more</a></button>
+              </div>
+              <div class="project-info">
+                  <h2 class="project-name">Weather App</h2>
+              </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+                <img src="images/projects/p1.png" class="project-thumb" alt="">
+                <button class="card-btn"><p class="project-short-description">Mobile Shoppee is a dynamic mobile shopping website for easy selecting mobile phones and placing order.</p>
+                <br><a href=""#>View more</a></button>
+            </div>
+            <div class="project-info">
+                <h2 class="project-name">Mobile Shoppee</h2>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/projects/p3.png" class="project-thumb" alt="">
+                <button class="card-btn"><p class="project-short-description">Web based multiple-in-one calculator, with several Mathematical and Conversion benefits.                  
+                </p>
+                <br><a href=""#>View more</a></button>
+            </div>
+            <div class="project-info">
+                <h2 class="project-name">My Calculator</h2>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/projects/p4.png" class="project-thumb" alt="">
+                <button class="card-btn"><p class="project-short-description">Web based music player app, hard coded, with play, pause, next, previous features.                  
+                </p>
+                <br><a href=""#>View more</a></button>
+            </div>
+            <div class="project-info">
+                <h2 class="project-name">Music Player</h2>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/projects/h1.png" class="project-thumb" alt="">
+                <button class="card-btn"><p class="project-short-description">Full stach website for blood bank management website for hospitals.
+                Arrange blood while needed and give a platform to donate blood securely.
+                </p>
+                <br><a href=""#>View more</a></button>
+            </div>
+            <div class="project-info">
+                <h2 class="project-name">Red Wings</h2>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/projects/h2.png" class="project-thumb" alt="">
+                <button class="card-btn"><p class="project-short-description">Full Stack Website for technical sources, personal to-do list and peer discussions for students.               
+                </p>
+                <br><a href=""#>View more</a></button>
+            </div>
+            <div class="project-info">
+                <h2 class="project-name">Tech Jam</h2>
+            </div>
+        </div>
+          <div class="project-card">
+              <div class="project-image">
+                  <img src="images/projects/calculator-app.jpg" class="project-thumb" alt="">
+                  <button class="card-btn"><p class="project-short-description">Calculator app is an android application. It's easy and very useful for most people. It has normal calculator features like add, substract with some scientific features like log, trigonametric values and many more.</p>
+                  <br><a href=""#>View more</a></button>
+              </div>
+              <div class="project-info">
+                  <h2 class="project-name">Calculator App</h2>
+              </div>
+          </div>
+          <div class="project-card">
+              <div class="project-image">
+                  <img src="images/projects/Rect_Collision_Response.jpg" class="project-thumb" alt="">
+                  <button class="card-btn"><p class="project-short-description">This is a small game application using pygame. When we move a rect,it will test for a collision, move out. This prevents the infamous "corner-catching" bug, and lets us move smoothly along walls.</p>
+                  <br><a href=""#>View more</a></button>
+              </div>
+              <div class="project-info">
+                  <h2 class="project-name">Rect Collision Response</h2>
+              </div>
+          </div>
+        
+          <div class="project-card">
+              <div class="project-image">
+                  <img src="images/projects/chat_bot.jpg" class="project-thumb" alt="">
+                  <button class="card-btn"><p class="project-short-description">A chat application using firebase and socket.io. Easy to use. Just make connection with people and talk to them. Also share your thoughts with others in your story.</p>
+                  <br><a href=""#>View more</a></button>
+              </div>
+              <div class="project-info">
+                  <h2 class="project-name">Chat App</h2>
+              </div>
+          </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer start -->
+    <footer>
+        <div class="divider">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="footer-body" style="margin-bottom: 2rem;">
+            <i class="fa fa-address-card"></i>
+            <h3>Developed by <a href="https://www.linkedin.com/in/srijita-mandal-430021203/" target="_blank"><span>Srijita Mandal</span></a> and <a href="https://www.linkedin.com/in/arpitasaha1b99/" target="_blank"><span>Arpita Saha</span></a></h3>
+            <div class="links">
+                <div class="bttn"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+                <div class="bttn"><a href="#"><i class="fa-brands fa-github"></i></a></div>
+                <div class="bttn"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+                <div class="bttn"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>					
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // caurosol 
+        const productContainers = [...document.querySelectorAll('.project-container')];
+        const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+        const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+        productContainers.forEach((item, i) => {
+        let containerDimensions = item.getBoundingClientRect();
+        let containerWidth = containerDimensions.width;
+
+        nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+        })
+
+        preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+        })
+        })
+    </script>
 </body>
 </html>
