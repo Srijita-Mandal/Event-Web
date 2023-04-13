@@ -195,7 +195,7 @@ body{
 body {
     /* background-color: rgb(59, 56, 56); */
     width: 100vw;
-    background-image: url("/images/pattern_bg.jpg");
+    background-image: url("./images/pattern_bg.jpg");
     /* background-image: url("/images/31jQiD8BQZL.jpg"); */
     background-attachment: fixed;
     /* background-repeat: no-repeat;
